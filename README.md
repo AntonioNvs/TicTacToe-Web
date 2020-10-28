@@ -4,4 +4,31 @@ Jogo da Velha com o algoritmo de inteligência artifical para jogos 1x1 MiniMax,
 ![Exemplo de um jogo](https://i.ibb.co/NFF9x1y/tictactoe.gif)
 
 ## Funcionalidades
-O jogo funciona basicamente em uma tela inicial, o qual serve para o player escolher qual letra irá jogar
+
+A primeira página do jogo serve para o player selecionar com qual letra irá jogar. O título da página modifica-se dinamicamente conforme o necessário, e as opções são acrescentadas pelo *JavaScript*. Quando clicadas, acionam o evento, e dependendo da letra selecionada, determina quem irá começar, levando em consideração que o *X* sempre começa. A tela HTML da parte da tabela é limpa e as nove casas do jogo é adicionadas.
+
+```javascript
+// Carregando a tela do jogo
+function loadGame(e) {
+  // Pegando qual jogador irá jogar
+  user = e.srcElement.textContent
+
+  // Limpando o conteúdo
+  table.innerHTML = ""
+
+  for(var i = 0; i < 3; i++) {
+    var div = document.createElement('div')
+    div.className = 'line'
+    for(var j = 0; j < 3; j++) {
+      div.appendChild(buttons[i*3+j])
+    }
+    table.appendChild(div)
+  }
+
+  if(user === X) title.innerHTML = "Jogue X"
+  else {
+    ai_turn = true
+    tictactoe(0)
+  }
+}
+```
