@@ -1,0 +1,48 @@
+body {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#main {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 36px;
+
+  margin-top: 32px;
+}
+
+.table {
+  margin-top: 56px;
+}
+
+.line {
+  display: flex;
+}
+
+.square {
+  width: 90px;
+  height: 90px;
+  background-color: gainsboro;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px;
+  margin: 12px;
+
+  transition: background-color 0,2s;
+}
+
+.square:hover {
+  opacity: 0.7;
+}
