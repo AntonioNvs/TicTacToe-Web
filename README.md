@@ -33,4 +33,6 @@ function loadGame(e) {
 }
 ```
 
-A função **tictactoe** é a principal, sendo ela acionada toda vez que uma jogada é realizada, seja pela máquina ou pelo usuário.
+A função **tictactoe** é a principal, sendo ela acionada toda vez que uma jogada é realizada, seja pela máquina ou pelo usuário. Quando o usuário realiza a jogada, é acrescentado um elemento visual para identificação e chamado a função novamente para a máquina realizar a contra-ação.
+
+Quando o jogo acaba, é informado quem ganhou, e acionado um timer de 2s, para poder reiniciar o arquivo e começar um outro jogo novamente. 
