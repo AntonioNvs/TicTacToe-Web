@@ -26,10 +26,7 @@ function loadGame(e) {
   }
 
   if(user === X) title.innerHTML = "Jogue X"
-  else {
-    ai_turn = true
-    tictactoe(0)
-  }
+  else tictactoe(0)
 }
 ```
 
