@@ -1,5 +1,5 @@
 # TicTacToe-Web
-Jogo da Velha com o algoritmo de inteligência artifical para jogos 1x1 MiniMax, feito na Web a partir da manipulação da DOM com JavaScript.
+Jogo da Velha com o algoritmo de inteligência artifical para jogos 1x1 [MiniMax](https://pt.wikipedia.org/wiki/Minimax), feito na Web a partir da manipulação da DOM com JavaScript. Jogo feito para um confronto do usuário e a máquina, entretanto, a partir do algoritmo, é impossível o usuário ganhar uma partida.
 
 ![Exemplo de um jogo](https://i.ibb.co/NFF9x1y/tictactoe.gif)
 
@@ -32,3 +32,5 @@ function loadGame(e) {
   }
 }
 ```
+
+A função **tictactoe** é a principal, sendo ela acionada toda vez que uma jogada é realizada, seja pela máquina ou pelo usuário.
